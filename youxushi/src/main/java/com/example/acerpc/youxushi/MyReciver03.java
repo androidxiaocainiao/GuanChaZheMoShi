@@ -3,6 +3,7 @@ package com.example.acerpc.youxushi;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
+import android.util.Log;
 import android.widget.Toast;
 
 /**
@@ -16,5 +17,6 @@ public class MyReciver03 extends BroadcastReceiver {
         //拦截事件
         //abortBroadcast();
         setResultData("我是改变之后的数据");
+        Log.i("tag", "MyReciver03");
     }
 }

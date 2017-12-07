@@ -5,6 +5,7 @@ import android.app.NotificationManager;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
+import android.util.Log;
 
 /**
  * Created by acer pc on 2017/12/6.
@@ -21,5 +22,6 @@ public class MyReciver02 extends BroadcastReceiver {
         builder.setContentText("恭喜你中了5000万，请输入邀请码去官网兑现");
         builder.setSmallIcon(R.mipmap.ic_launcher);
         manager.notify(0x11, builder.build());
+        Log.i("tag", "恭喜你中了5000万，请输入邀请码去官网兑现");
     }
 }
